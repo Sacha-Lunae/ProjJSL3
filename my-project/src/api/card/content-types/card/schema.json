@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sign": {
+      "type": "enumeration",
+      "enum": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "saggitarius",
+        "capricorn",
+        "aquarius",
+        "pisces",
+        "none"
+      ]
+    },
+    "arcane": {
+      "type": "enumeration",
+      "enum": [
+        "major",
+        "minor"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "denarius",
+        "sticks",
+        "cups",
+        "swords",
+        "none"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "descriptionUD": {
+      "type": "text"
+    }
+  }
+}

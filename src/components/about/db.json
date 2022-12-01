@@ -1,0 +1,320 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "attributes": {
+                "name": "The Fool",
+                "description": "New beginning. Potential, stupidity, innocence, euphoria, travel.",
+                "descriptionUD": "Delinquent, pretentious.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:44:45.792Z",
+                "updatedAt": "2022-11-23T16:44:46.839Z",
+                "publishedAt": "2022-11-23T16:44:46.836Z"
+            }
+        },
+        {
+            "id": 2,
+            "attributes": {
+                "name": "The Magician",
+                "description": "Channeling the creative force of the Universe. Master, confidence, talent, willpower, charisma.",
+                "descriptionUD": "Anxiety, slander.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:47:28.713Z",
+                "updatedAt": "2022-11-23T16:47:29.347Z",
+                "publishedAt": "2022-11-23T16:47:29.343Z"
+            }
+        },
+        {
+            "id": 3,
+            "attributes": {
+                "name": "The High Priestress",
+                "description": "Model of the soul.Oracle, occult, enigma, authenticity, mystery, intelligence.",
+                "descriptionUD": "Weakness, superficial.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:49:07.956Z",
+                "updatedAt": "2022-11-23T16:49:10.546Z",
+                "publishedAt": "2022-11-23T16:49:10.543Z"
+            }
+        },
+        {
+            "id": 4,
+            "attributes": {
+                "name": "The Empress",
+                "description": "Creative expansion and maternal qualities. Abundance, activity, originality, fertility, reinvention.",
+                "descriptionUD": "Doubt, impotence.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:50:27.864Z",
+                "updatedAt": "2022-11-23T16:50:29.446Z",
+                "publishedAt": "2022-11-23T16:50:29.443Z"
+            }
+        },
+        {
+            "id": 5,
+            "attributes": {
+                "name": "The Emperor",
+                "description": "Erected structure and paternal qualities. Unwavering, reliable, authority, conviction, determination.",
+                "descriptionUD": "Difficulty, trapped.",
+                "sign": "aries",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:51:26.101Z",
+                "updatedAt": "2022-11-23T16:51:27.089Z",
+                "publishedAt": "2022-11-23T16:51:27.085Z"
+            }
+        },
+        {
+            "id": 6,
+            "attributes": {
+                "name": "The Hierophant",
+                "description": "Secrets, sacred teachings and advice. Religion, dogma, sacrament, guide, ritual.",
+                "descriptionUD": "Distrust, skepticism.",
+                "sign": "taurus",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:52:33.754Z",
+                "updatedAt": "2022-11-23T16:52:34.654Z",
+                "publishedAt": "2022-11-23T16:52:34.649Z"
+            }
+        },
+        {
+            "id": 7,
+            "attributes": {
+                "name": "The Lovers",
+                "description": "Incipient love. Choice, seduction, attraction, desire, eroticism.",
+                "descriptionUD": "Repulsion, abandonment.",
+                "sign": "gemini",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:53:33.458Z",
+                "updatedAt": "2022-11-23T16:53:34.369Z",
+                "publishedAt": "2022-11-23T16:53:34.366Z"
+            }
+        },
+        {
+            "id": 8,
+            "attributes": {
+                "name": "The Chariot",
+                "description": "Moving forward with trust. Help, fight, pride, conquest, agility.",
+                "descriptionUD": "Collapse, depression.",
+                "sign": "cancer",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:54:23.448Z",
+                "updatedAt": "2022-11-23T17:06:27.622Z",
+                "publishedAt": "2022-11-23T17:06:27.618Z"
+            }
+        },
+        {
+            "id": 9,
+            "attributes": {
+                "name": "Strength",
+                "description": "The power by the finesse. Dynamics, vitality, discipline, vigor, victory.",
+                "descriptionUD": "Corruption, disrespect.",
+                "sign": "leo",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T16:55:44.930Z",
+                "updatedAt": "2022-11-23T16:55:46.299Z",
+                "publishedAt": "2022-11-23T16:55:46.297Z"
+            }
+        },
+        {
+            "id": 10,
+            "attributes": {
+                "name": "The Hermit",
+                "description": "Light of knowledge interior. Sagacity, vigilance, mystery divine, introversion, retreat.",
+                "descriptionUD": "Fear, hide.",
+                "sign": "virgo",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:00:52.395Z",
+                "updatedAt": "2022-11-23T17:00:53.394Z",
+                "publishedAt": "2022-11-23T17:00:53.388Z"
+            }
+        },
+        {
+            "id": 11,
+            "attributes": {
+                "name": "Wheel Of Fortune",
+                "description": "Revolution of Time and interplanetary space. Fortune, fame, happiness, luck, winds of the destiny.",
+                "descriptionUD": "Flow, cycle.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:01:54.444Z",
+                "updatedAt": "2022-11-23T17:01:55.143Z",
+                "publishedAt": "2022-11-23T17:01:55.138Z"
+            }
+        },
+        {
+            "id": 12,
+            "attributes": {
+                "name": "Justice",
+                "description": "Karma and rules of company. Integrity, work, righteousness, truth.",
+                "descriptionUD": "Favoritism, legal obstacle.",
+                "sign": "libra",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:02:48.827Z",
+                "updatedAt": "2022-11-23T17:02:49.645Z",
+                "publishedAt": "2022-11-23T17:02:49.641Z"
+            }
+        },
+        {
+            "id": 13,
+            "attributes": {
+                "name": "The Hanged Man",
+                "description": "Ability to see a situation from a new angle. Vigilance, mysticism, occultism, prophecy.",
+                "descriptionUD": "Thought common, psychology of crowds.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:06:21.088Z",
+                "updatedAt": "2022-11-23T17:06:23.379Z",
+                "publishedAt": "2022-11-23T17:06:23.374Z"
+            }
+        },
+        {
+            "id": 14,
+            "attributes": {
+                "name": "Death",
+                "description": "To forget the past for moving forward. Terminus, carnage, loss, passage, evolution.",
+                "descriptionUD": "Paralysis, crystallization.",
+                "sign": "scorpio",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:07:27.759Z",
+                "updatedAt": "2022-11-23T17:07:28.765Z",
+                "publishedAt": "2022-11-23T17:07:28.760Z"
+            }
+        },
+        {
+            "id": 15,
+            "attributes": {
+                "name": "Temperance",
+                "description": "Perfecting. Prudence, synthesis, management, alchemy.",
+                "descriptionUD": "Unbalanced, irregular.",
+                "sign": "saggitarius",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:08:33.707Z",
+                "updatedAt": "2022-11-23T17:08:34.793Z",
+                "publishedAt": "2022-11-23T17:08:34.789Z"
+            }
+        },
+        {
+            "id": 16,
+            "attributes": {
+                "name": "The Devil",
+                "description": "Hostage to oneself. Compulsion, desecration, violence, disaster, hedonism.",
+                "descriptionUD": "Futility, nonchalance.",
+                "sign": "capricorn",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:09:41.517Z",
+                "updatedAt": "2022-11-23T17:09:42.260Z",
+                "publishedAt": "2022-11-23T17:09:42.255Z"
+            }
+        },
+        {
+            "id": 17,
+            "attributes": {
+                "name": "The Tower",
+                "description": "Released links. Agony, affliction, ruin, humility, disaster unexpected.",
+                "descriptionUD": "Less serious disaster.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:10:48.905Z",
+                "updatedAt": "2022-11-23T17:10:49.683Z",
+                "publishedAt": "2022-11-23T17:10:49.679Z"
+            }
+        },
+        {
+            "id": 18,
+            "attributes": {
+                "name": "The Star",
+                "description": "Calm and silence after the storm. Catharsis, inspiration, hope, optimism, clarity.",
+                "descriptionUD": "Disdain, arrogance.",
+                "sign": "aquarius",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:11:43.479Z",
+                "updatedAt": "2022-11-23T17:11:44.384Z",
+                "publishedAt": "2022-11-23T17:11:44.378Z"
+            }
+        },
+        {
+            "id": 19,
+            "attributes": {
+                "name": "The Moon",
+                "description": "Emergence of latent possibilities. Mystery, occult, hidden opponents, seduction, darkness.",
+                "descriptionUD": "Error and less serious deception.",
+                "sign": "pisces",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:12:42.968Z",
+                "updatedAt": "2022-11-23T17:12:44.033Z",
+                "publishedAt": "2022-11-23T17:12:44.029Z"
+            }
+        },
+        {
+            "id": 20,
+            "attributes": {
+                "name": "The Sun",
+                "description": "Rapid manifestation Prosperity, satisfaction, abundance material, success, vitality.",
+                "descriptionUD": "Similar meanings, but less intense.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:13:53.981Z",
+                "updatedAt": "2022-11-23T17:13:54.785Z",
+                "publishedAt": "2022-11-23T17:13:54.776Z"
+            }
+        },
+        {
+            "id": 21,
+            "attributes": {
+                "name": "Judgement",
+                "description": "A warning that changes everything. Radical change, regeneration, results, awakening, release.",
+                "descriptionUD": "Vile, low.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:14:53.527Z",
+                "updatedAt": "2022-11-23T17:14:54.162Z",
+                "publishedAt": "2022-11-23T17:14:54.158Z"
+            }
+        },
+        {
+            "id": 22,
+            "attributes": {
+                "name": "The World",
+                "description": "Perfect order, pur pleasure. Definite success, travel, euphoria, progress, perfection.",
+                "descriptionUD": "Idle, apathetic.",
+                "sign": "none",
+                "arcane": "major",
+                "color": "none",
+                "createdAt": "2022-11-23T17:16:19.832Z",
+                "updatedAt": "2022-11-23T17:16:20.773Z",
+                "publishedAt": "2022-11-23T17:16:20.768Z"
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 22
+        }
+    }
+}
