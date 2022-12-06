@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap');
 
 * {
   margin: 0;
@@ -11,12 +11,12 @@
 }
 
 :root{
-  --color-bg: #2D2CA2;
-  --color-bg-variant: #5351e7;
-  --color-primary:  #dc97ef;
-  --color-primary-variant: #a456b9;
+  --color-bg: #1A3A3A;
+  --color-bg-variant: #2b6060;
+  --color-primary:  #78A8B3;
+  --color-primary-variant: #E8CC61;
   --color-white: #fff;
-  --color-light: #c8c6c1;
+  --color-light: #c3c3c3;
 
   --transition: all 400ms ease;
 
@@ -34,11 +34,10 @@ html{
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Yanone Kaffeesatz', monospace;
   color: var(--color-white);
   background: var(--color-bg);
   line-height: 1.7;
-  /* background-image: url(../src/assets/bg-texture.avif); */
 }
 
 /* ==== GENERAL STYLES ==== */
@@ -52,12 +51,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  font-weight : 500
+h5,
+h6 {
+  font-weight : 500;
+  font-size:x-large;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 section {

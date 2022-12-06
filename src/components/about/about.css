@@ -27,12 +27,14 @@
 
 .about_cards{
     margin-top: 50px;
+    margin-bottom: -20px;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 }
 
 .about_card{
+    margin-top: -30px;
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
@@ -60,17 +62,21 @@
 }
 
 .about_icon{
-    color: var(--color-primary);
+    color: var(--color-primary-variant);
     font-size: 1.4rem;
     margin-bottom: 5px;
 }
 
 .about_card h5 {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
+}
+
+.about_content h2{
+    font-size: 2.5rem;
 }
 
 .about_card small{
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: var(--color-light);
 }
 

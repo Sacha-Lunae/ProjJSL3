@@ -38,18 +38,19 @@ header{
     background: var(--color-primary);
 }
 
-/* ==== ME ==== */
+/* ==== INFO TEXT ==== */
 
-.me {
+.info {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
     position: absolute;
-    left: calc(50% - 11rem);
     margin-top: 4rem;
+    margin-bottom: 4rem;
     border-radius: 12rem 12em 0 0;
     overflow: hidden; 
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 /* ==== SCROLL DOWN ==== */
