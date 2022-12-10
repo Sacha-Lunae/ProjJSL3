@@ -6,9 +6,25 @@ import { FormControl } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Select } from "@mui/material";
 import { InputLabel } from "@mui/material";
+import { yellow } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Nav } from "../nav/nav";
+import { Header } from "../header/header";
+import { Footer } from "../footer/footer";
 
 
 const Cards_list = () => {
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: '#E8CC61',
+      },
+      secondary: {
+        main: yellow[600],
+      },
+    },
+  });
 
   const [cards, setCards] = useState([])
   const [sign, setSign] = useState("none")
@@ -42,32 +58,38 @@ const Cards_list = () => {
   return (
 
     <div>
-      <div>{url}</div>
+      <Nav tab="cardslist" />
+      <Header />
 
-      <FormControl>
-        <InputLabel id="demo-simple-select-label">Sign</InputLabel>
+    <div className="menu_deroulant">
+      <ThemeProvider theme={theme}>
+      <FormControl color="primary" variant="outlined" fullWidth="true">
+        <InputLabel id="demo-simple-select-label" color="primary">Sign</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={sign}
           label="Sign"
+          color="primary"
           onChange={handleChangeSign}
         >
-          <MenuItem value={"none"}>All</MenuItem>
-          <MenuItem value={"aries"}>Aries</MenuItem>
-          <MenuItem value={"taurus"}>Taurus</MenuItem>
-          <MenuItem value={"gemini"}>Gemini</MenuItem>
-          <MenuItem value={"cancer"}>Cancer</MenuItem>
-          <MenuItem value={"leo"}>Leo</MenuItem>
-          <MenuItem value={"virgo"}>Virgo</MenuItem>
-          <MenuItem value={"libra"}>Libra</MenuItem>
-          <MenuItem value={"scorpio"}>Scorpio</MenuItem>
-          <MenuItem value={"saggitarius"}>Saggitarius</MenuItem>
-          <MenuItem value={"capricorn"}>Capricorn</MenuItem>
-          <MenuItem value={"aquarius"}>Aquarius</MenuItem>
-          <MenuItem value={"pisces"}>Pisces</MenuItem>
+          <MenuItem value={"none"} color="primary">All</MenuItem>
+          <MenuItem value={"aries"} color="primary">Aries</MenuItem>
+          <MenuItem value={"taurus"} color="primary">Taurus</MenuItem>
+          <MenuItem value={"gemini"} color="primary">Gemini</MenuItem>
+          <MenuItem value={"cancer"} color="primary">Cancer</MenuItem>
+          <MenuItem value={"leo"} color="primary">Leo</MenuItem>
+          <MenuItem value={"virgo"} color="primary">Virgo</MenuItem>
+          <MenuItem value={"libra"} color="primary">Libra</MenuItem>
+          <MenuItem value={"scorpio"} color="primary">Scorpio</MenuItem>
+          <MenuItem value={"saggitarius"} color="primary">Saggitarius</MenuItem>
+          <MenuItem value={"capricorn"} color="primary">Capricorn</MenuItem>
+          <MenuItem value={"aquarius"} color="primary">Aquarius</MenuItem>
+          <MenuItem value={"pisces"} color="primary">Pisces</MenuItem>
         </Select>
       </FormControl>
+      </ThemeProvider>
+      </div>
 
 
       {Object.keys(cards).map((item) => (
@@ -75,6 +97,7 @@ const Cards_list = () => {
       ))}
 
         
+    <Footer />
     </div>
   )
 }

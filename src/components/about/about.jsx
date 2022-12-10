@@ -13,7 +13,7 @@ const correctID = parseInt(props.id)+1
 let apiURL = `http://localhost:1337/api/cards/${correctID}?populate=*`
 
 let [Data,setData] = useState(null)
-let [Aled, setAled] = useState(null)
+let [Image, setImage] = useState(null)
 let [Name, setName] = useState(null)
 let [Description, setDesc] = useState(null)
 let [DescUD, setDescUD] = useState(null)
@@ -24,7 +24,7 @@ let [Sign, setSign] = useState(null)
 async function startFetching(){
     axios.get(apiURL).then(response => {
         setData(response.data.data);
-        setAled(`http://localhost:1337${response.data.data.attributes.image.data.attributes.formats.small.url}`)
+        setImage(`http://localhost:1337${response.data.data.attributes.image.data.attributes.formats.small.url}`)
         setName(response.data.data.attributes.name)
         setDesc(response.data.data.attributes.description)
         setDescUD(response.data.data.attributes.descriptionUD)
@@ -43,7 +43,7 @@ async function startFetching(){
 
                 <div className="about_me">
                     <div className="about_me_image">
-                    <a href={apiURL}><img src={Aled} alt="card" href/></a>
+                    <a href={apiURL}><img src={Image} alt="card" href/></a>
                     </div> 
                 </div>
 

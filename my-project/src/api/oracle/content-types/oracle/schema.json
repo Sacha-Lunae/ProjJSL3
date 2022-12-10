@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oracles",
+  "info": {
+    "singularName": "oracle",
+    "pluralName": "oracles",
+    "displayName": "Oracle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "descriptionUD": {
+      "type": "text"
+    },
+    "imageURL": {
+      "type": "string"
+    }
+  }
+}
