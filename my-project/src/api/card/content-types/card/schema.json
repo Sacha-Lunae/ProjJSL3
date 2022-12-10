@@ -19,12 +19,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "sign": {
       "type": "enumeration",
@@ -46,20 +41,11 @@
     },
     "arcane": {
       "type": "enumeration",
-      "enum": [
-        "major",
-        "minor"
-      ]
+      "enum": ["major", "minor"]
     },
     "color": {
       "type": "enumeration",
-      "enum": [
-        "denarius",
-        "sticks",
-        "cups",
-        "swords",
-        "none"
-      ]
+      "enum": ["denarius", "sticks", "cups", "swords", "none"]
     },
     "description": {
       "type": "text"

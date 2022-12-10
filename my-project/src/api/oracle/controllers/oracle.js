@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * oracle controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::oracle.oracle');
+module.exports = createCoreController("api::oracle.oracle");

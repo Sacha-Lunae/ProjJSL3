@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap");
 
 * {
   margin: 0;
@@ -10,31 +10,31 @@
   text-decoration: none;
 }
 
-:root{
+:root {
   --color-bg: #2b6060;
-  --color-bg-variant: #1A3A3A;
-  --color-primary:  #78A8B3;
-  --color-primary-variant: #E8CC61;
+  --color-bg-variant: #1a3a3a;
+  --color-primary: #78a8b3;
+  --color-primary-variant: #e8cc61;
   --color-white: #fff;
   --color-light: #c3c3c3;
 
   --transition: all 400ms ease;
 
-  --container-width-lg : 75%;
-  --container-width-md : 86%;
-  --container-width-sm : 90%;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
-  
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
 body {
-  font-family: 'Yanone Kaffeesatz', monospace;
+  font-family: "Yanone Kaffeesatz", monospace;
   color: var(--color-white);
   background: var(--color-bg);
   line-height: 1.7;
@@ -53,8 +53,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight : 500;
-  font-size:x-large;
+  font-weight: 500;
+  font-size: x-large;
 }
 
 h1 {
@@ -62,12 +62,13 @@ h1 {
 }
 
 section {
-  margin-top : 8rem;
+  margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section > h2,
+section > h5 {
   text-align: center;
-  color: var(--color-light)
+  color: var(--color-light);
 }
 
 section > h2 {
@@ -88,7 +89,7 @@ a:hover {
   color: var(--color-white);
 }
 
-.btn{
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -117,26 +118,24 @@ img {
 }
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
-@media screen and (max-width: 1024px){
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: var(--container-width-md);
-
   }
 
-  section{
+  section {
     margin-top: 6rem;
     height: 100vh;
   }
 }
 
 /* ==== MEDIA QUERIES (SMALL DEVICES) ==== */
-@media screen and (max-width: 600px){
-  .container{
+@media screen and (max-width: 600px) {
+  .container {
     width: var(--container-width-sm);
-
   }
- 
-  section >h2{
+
+  section > h2 {
     margin-top: 2rem;
   }
 }

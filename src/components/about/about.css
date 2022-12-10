@@ -1,142 +1,145 @@
-.about_container{
-    display:grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+.about_container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
 }
 
-.about_me{
-    width: 287px;
-    height: 492px;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
-    display:grid;
-    place-items:center;
+.about_me {
+  width: 287px;
+  height: 492px;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
 }
 
-.about_me_image{
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
+.about_me_image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
 }
 
-.about_me_image:hover{
-    transform: rotate(0);
+.about_me_image:hover {
+  transform: rotate(0);
 }
 
-.about_cards{
-    margin-top: 50px;
-    margin-bottom: -20px;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+.about_cards {
+  margin-top: 50px;
+  margin-bottom: -20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
-.about_card{
-    margin-top: -30px;
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    height: 300px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+.about_card {
+  margin-top: -30px;
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  height: 300px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.about_card:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-
+.about_card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
 }
 
-.upside_down{
-    transform: rotate(180deg);
-    transition: var(--transition);
+.upside_down {
+  transform: rotate(180deg);
+  transition: var(--transition);
 }
 
-.upside_down:hover{
-    transform: rotate(0);
+.upside_down:hover {
+  transform: rotate(0);
 }
 
-.about_icon{
-    color: var(--color-primary-variant);
-    font-size: 1.4rem;
-    margin-bottom: 5px;
+.about_icon {
+  color: var(--color-primary-variant);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
 }
 
 .about_card h5 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-.about_content h2{
-    font-size: 2.5rem;
+.about_content h2 {
+  font-size: 2.5rem;
 }
 
-.about_card small{
-    font-size: 1rem;
-    color: var(--color-light);
+.about_card small {
+  font-size: 1rem;
+  color: var(--color-light);
 }
 
-.about_content p{
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
-    text-align: justify;
+.about_content p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+  text-align: justify;
 }
 
-.menu_deroulant{
-    margin-right: 185px;
-    margin-left: 185px;
-    padding-top: 20px;
+.menu_deroulant {
+  margin-right: 185px;
+  margin-left: 185px;
+  padding-top: 20px;
 }
 
-.meme_ligne_svp{
-    display: flex;
-    height: 50px;
-    width: 50px;
+.meme_ligne_svp {
+  display: flex;
+  height: 50px;
+  width: 50px;
 }
 
-.btn-primary{
-    margin-left:405px;
+.btn-primary {
+  margin-left: 405px;
 }
-
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
-@media screen and (max-width: 1024px){
-    .about_container{
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+@media screen and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 
-    .about_me{
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
+  .about_me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
 
-    .about_content p{
-        margin: 1rem 0 1.5rem;
-    }
+  .about_content p {
+    margin: 1rem 0 1.5rem;
+  }
 }
 
 /* ==== MEDIA QUERIES (SMALL DEVICES) ==== */
-@media screen and (max-width: 600px){
-    .about_me{
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
+@media screen and (max-width: 600px) {
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
 
-    .about_cards{
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+  .about_cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
-    .about_content{
-        text-align: center;
-    }
+  .about_content {
+    text-align: center;
+  }
 
-    .about_content p{
-        margin: 1.5rem 0;
-    }
+  .about_content p {
+    margin: 1.5rem 0;
+  }
 }
