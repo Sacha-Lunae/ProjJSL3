@@ -13,7 +13,7 @@ function Edit() {
   const ID = useParams().id;
   const history = useHistory();
 
-  let apiURL = `http://localhost:1337/api/oracles/${ID}?populate=*`;
+  let apiURL = `https://project-tarot-deck-js.onrender.com/api/oracles/${ID}?populate=*`;
 
   const handleSubmit = async (event) => {
     event.preventDefault();

@@ -8,7 +8,7 @@ import "./about.css";
 function About(props) {
   const correctID = parseInt(props.id) + 1;
 
-  let apiURL = `http://localhost:1337/api/cards/${correctID}?populate=*`;
+  let apiURL = `https://project-tarot-deck-js.onrender.com/api/cards/${correctID}?populate=*`;
 
   let [Data, setData] = useState(null);
   let [Image, setImage] = useState(null);
@@ -24,7 +24,7 @@ function About(props) {
       axios.get(apiURL).then((response) => {
         setData(response.data.data);
         setImage(
-          `http://localhost:1337${response.data.data.attributes.image.data.attributes.formats.small.url}`
+          `https://project-tarot-deck-js.onrender.com${response.data.data.attributes.image.data.attributes.formats.small.url}`
         );
         setName(response.data.data.attributes.name);
         setDesc(response.data.data.attributes.description);

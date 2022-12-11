@@ -26,7 +26,7 @@ const Cards_list = () => {
 
   const [cards, setCards] = useState([]);
   const [sign, setSign] = useState("none");
-  const [url, setUrl] = useState("http://localhost:1337/api/cards");
+  const [url, setUrl] = useState("https://project-tarot-deck-js.onrender.com/api/cards");
 
   function handleChangeSign(event) {
     setSign(event.target.value);
@@ -35,9 +35,9 @@ const Cards_list = () => {
   useEffect(() => {
     let ignore = false;
     if (sign == "none") {
-      setUrl("http://localhost:1337/api/cards");
+      setUrl("https://project-tarot-deck-js.onrender.com/api/cards");
     } else {
-      setUrl(`http://localhost:1337/api/cards?filters[sign][$eq]=${sign}`);
+      setUrl(`https://project-tarot-deck-js.onrender.com/api/cards?filters[sign][$eq]=${sign}`);
     }
     try {
       fetch(url).then(async (data) => {

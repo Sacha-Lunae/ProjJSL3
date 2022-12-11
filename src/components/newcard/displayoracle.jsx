@@ -11,7 +11,7 @@ function DisplayOracle(props) {
   const correctID = parseInt(props.id) + 1;
   const history = useHistory();
 
-  let apiURL = `http://localhost:1337/api/oracles/${correctID}?populate=*`;
+  let apiURL = `https://project-tarot-deck-js.onrender.com/api/oracles/${correctID}?populate=*`;
 
   let [Image, setImage] = useState(null);
   let [Name, setName] = useState(null);
