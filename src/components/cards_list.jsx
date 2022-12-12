@@ -1,16 +1,16 @@
 import React from "react";
-import { About } from "./about";
+import { DisplayCard } from "./display_card";
 import { useEffect, useState } from "react";
-import "./about.css";
+import "..styles/display_card.css";
 import { FormControl } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Select } from "@mui/material";
 import { InputLabel } from "@mui/material";
 import { yellow } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Nav } from "../nav/nav";
-import { Header } from "../header/header";
-import { Footer } from "../footer/footer";
+import { Nav } from "./nav";
+import { Header } from "./header";
+import { Footer } from "./footer";
 
 const Cards_list = () => {
   const theme = createTheme({
@@ -119,7 +119,7 @@ const Cards_list = () => {
       </div>
 
       {Object.keys(cards).map((item) => (
-        <About id={parseInt(cards[item].id) - 1} />
+        <DisplayCard id={parseInt(cards[item].id) - 1} />
       ))}
 
       <Footer />

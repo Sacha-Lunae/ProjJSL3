@@ -1,12 +1,12 @@
 import React from "react";
-import "./newcard.css";
 import axios from "axios";
+import "../styles/newcard.css";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { DisplayOracle } from "./displayoracle";
 import { useEffect } from "react";
-import { Nav } from "../nav/nav";
-import { Footer } from "../footer/footer";
+import { Nav } from "./nav";
+import { Footer } from "./footer";
 
 const NewCard = () => {
   const [url, setURL] = useState("http://localhost:1337/api/Oracles/");

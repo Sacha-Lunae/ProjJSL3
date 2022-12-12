@@ -2,7 +2,7 @@ import React from "react";
 import { ImHome } from "react-icons/im";
 import { ImQuill } from "react-icons/im";
 import { GiCardPick } from "react-icons/gi";
-import "./nav.css";
+import "../styles/nav.css";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -30,9 +30,9 @@ const Nav = (props) => {
         <ImHome />{" "}
       </a>
       <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
+        href="#card"
+        onClick={() => setActiveNav("#card")}
+        className={activeNav === "#card" ? "active" : ""}
       >
         <GiCardPick />{" "}
       </a>

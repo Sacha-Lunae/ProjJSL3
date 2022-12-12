@@ -1,9 +1,9 @@
 import React from "react";
-import "./../about/about.css";
+import "../styles/display_card.css";
 import { GiBleedingEye } from "react-icons/gi";
 import { GiWarlockEye } from "react-icons/gi";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { RiDeleteBin5Line, RiEdit2Line } from "react-icons/ri";
 
@@ -49,17 +49,17 @@ function DisplayOracle(props) {
   }
 
   return (
-    <section id="about">
-      <div className="container about_container">
-        <div className="about_me">
-          <div className="about_me_image">
+    <section id="card">
+      <div className="container card_container">
+        <div className="card_display">
+          <div className="card_image">
             <a href={apiURL}>
               <img src={Image} alt="card" href />
             </a>
           </div>
         </div>
 
-        <div className="about_content">
+        <div className="card_content">
           <h4>Name: </h4>
           <div className="meme_ligne_svp">
             <h2>{Name}</h2>
@@ -72,15 +72,15 @@ function DisplayOracle(props) {
               <RiEdit2Line size="20" />{" "}
             </a>
           </div>
-          <div className="about_cards">
-            <article className="about_card">
-              <GiWarlockEye className="about_icon" />
+          <div className="descriptionss">
+            <article className="description">
+              <GiWarlockEye className="description_icon" />
               <h5>Meaning</h5>
               <small>{Description}</small>
             </article>
-            <article className="about_card">
+            <article className="description">
               <div className="upside_down">
-                <GiBleedingEye className="about_icon" />
+                <GiBleedingEye className="description_icon" />
                 <h5>Upside-down Meaning</h5> <br /> <br />
                 <small>{DescUD}</small>
               </div>

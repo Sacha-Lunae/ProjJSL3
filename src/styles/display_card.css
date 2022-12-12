@@ -1,10 +1,10 @@
-.about_container {
+.card_container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
 
-.about_me {
+.card_display {
   width: 287px;
   height: 492px;
   aspect-ratio: 1/1;
@@ -19,18 +19,18 @@
   place-items: center;
 }
 
-.about_me_image {
+.card_image {
   border-radius: 2rem;
   overflow: hidden;
   transform: rotate(10deg);
   transition: var(--transition);
 }
 
-.about_me_image:hover {
+.card_image:hover {
   transform: rotate(0);
 }
 
-.about_cards {
+.descriptions {
   margin-top: 50px;
   margin-bottom: -20px;
   display: grid;
@@ -38,7 +38,7 @@
   gap: 4rem;
 }
 
-.about_card {
+.description {
   margin-top: -30px;
   background: var(--color-bg-variant);
   border: 1px solid transparent;
@@ -51,7 +51,7 @@
   padding-right: 30px;
 }
 
-.about_card:hover {
+.description:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
 }
@@ -65,26 +65,26 @@
   transform: rotate(0);
 }
 
-.about_icon {
+.description_icon {
   color: var(--color-primary-variant);
   font-size: 1.4rem;
   margin-bottom: 5px;
 }
 
-.about_card h5 {
+.description h5 {
   font-size: 1.3rem;
 }
 
-.about_content h2 {
+.card_content h2 {
   font-size: 2.5rem;
 }
 
-.about_card small {
+.description small {
   font-size: 1rem;
   color: var(--color-light);
 }
 
-.about_content p {
+.card_content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
   text-align: justify;
@@ -108,38 +108,38 @@
 
 /* ==== MEDIA QUERIES (MEDIUM DEVICES) ==== */
 @media screen and (max-width: 1024px) {
-  .about_container {
+  .card_container {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  .about_me {
+  .card_display {
     width: 50%;
     margin: 2rem auto 4rem;
   }
 
-  .about_content p {
+  .card_content p {
     margin: 1rem 0 1.5rem;
   }
 }
 
 /* ==== MEDIA QUERIES (SMALL DEVICES) ==== */
 @media screen and (max-width: 600px) {
-  .about_me {
+  .card_display {
     width: 65%;
     margin: 0 auto 3rem;
   }
 
-  .about_cards {
+  .descriptions {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 
-  .about_content {
+  .card_content {
     text-align: center;
   }
 
-  .about_content p {
+  .card_content p {
     margin: 1.5rem 0;
   }
 }

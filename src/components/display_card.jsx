@@ -2,15 +2,14 @@ import React from "react";
 import { GiBleedingEye } from "react-icons/gi";
 import { GiWarlockEye } from "react-icons/gi";
 import axios from "axios";
-import { useEffect, useState } from "react";
-import "./about.css";
+import { useState } from "react";
+import "../styles/display_card.css";
 
-function About(props) {
+function DisplayCard(props) {
   const correctID = parseInt(props.id) + 1;
 
   let apiURL = `https://project-tarot-deck-js.onrender.com/api/cards/${correctID}?populate=*`;
 
-  let [Data, setData] = useState(null);
   let [Image, setImage] = useState(null);
   let [Name, setName] = useState(null);
   let [Description, setDesc] = useState(null);
@@ -22,9 +21,8 @@ function About(props) {
   async function startFetching() {
     try {
       axios.get(apiURL).then((response) => {
-        setData(response.data.data);
         setImage(
-          `https://project-tarot-deck-js.onrender.com${response.data.data.attributes.image.data.attributes.formats.small.url}`
+          response.data.data.attributes.imageURL
         );
         setName(response.data.data.attributes.name);
         setDesc(response.data.data.attributes.description);
@@ -41,28 +39,28 @@ function About(props) {
   startFetching();
 
   return (
-    <section id="about">
-      <div className="container about_container">
-        <div className="about_me">
-          <div className="about_me_image">
+    <section id="card">
+      <div className="container card_containerr">
+        <div className="card_display">
+          <div className="card_image">
             <a href={apiURL}>
               <img src={Image} alt="card" href />
             </a>
           </div>
         </div>
 
-        <div className="about_content">
+        <div className="card_content">
           <h4>Name: </h4>
           <h2>{Name}</h2>
-          <div className="about_cards">
-            <article className="about_card">
-              <GiWarlockEye className="about_icon" />
+          <div className="descriptions">
+            <article className="description">
+              <GiWarlockEye className="description_icon" />
               <h5>Meaning</h5>
               <small>{Description}</small>
             </article>
-            <article className="about_card">
-              <div className="upside_down">
-                <GiBleedingEye className="about_icon" />
+            <article className="descriptions">
+              <div className="description">
+                <GiBleedingEye className="description_icon" />
                 <h5>Upside-down Meaning</h5> <br /> <br />
                 <small>{DescUD}</small>
               </div>
@@ -79,4 +77,4 @@ function About(props) {
   );
 }
 
-export { About };
+export { DisplayCard };

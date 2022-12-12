@@ -1,7 +1,7 @@
 import React from "react";
-import "./edit.css";
+import "../styles/edit.css";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { DisplayOracle } from "./displayoracle";
 

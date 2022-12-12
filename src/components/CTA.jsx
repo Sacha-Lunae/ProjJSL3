@@ -9,8 +9,11 @@ const CTA = () => {
         {" "}
         <ImDownload /> ZIP of cards
       </a>
-      <a href="#contact" className="btn btn-primary">
-        Let's Talk
+      <a
+        href="https://www.sacred-texts.com/tarot/pkt/index.htm"
+        className="btn btn-primary"
+      >
+        Main info source
       </a>
     </div>
   );
