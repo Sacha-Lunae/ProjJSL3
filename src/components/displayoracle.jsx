@@ -72,18 +72,16 @@ function DisplayOracle(props) {
               <RiEdit2Line size="20" />{" "}
             </a>
           </div>
-          <div className="descriptionss">
+          <div className="descriptions">
             <article className="description">
               <GiWarlockEye className="description_icon" />
               <h5>Meaning</h5>
               <small>{Description}</small>
             </article>
-            <article className="description">
-              <div className="upside_down">
-                <GiBleedingEye className="description_icon" />
-                <h5>Upside-down Meaning</h5> <br /> <br />
-                <small>{DescUD}</small>
-              </div>
+            <article className="description upside_down">
+              <GiBleedingEye className="description_icon" />
+              <h5>Upside-down Meaning</h5> <br /> <br />
+              <small>{DescUD}</small>
             </article>
           </div>
         </div>

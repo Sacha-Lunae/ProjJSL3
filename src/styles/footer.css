@@ -1,0 +1,26 @@
+.footer_container {
+  background-color: var(--color-bg-variant);
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  margin-left: 50px;
+  margin-right: 100px;
+  width: 500px;
+}
+
+.title_footer {
+  font-size: 150%;
+  padding-bottom: 5px;
+}
+
+.text_footer {
+  color: var(--color-light);
+  text-align: justify;
+}
+
+ul > li {
+  display: inline-block;
+}

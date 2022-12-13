@@ -1,5 +1,5 @@
 import React from "react";
-import IMCARDS from "../../assets/Cards.zip";
+import IMCARDS from "../assets/Cards.zip";
 import { ImDownload } from "react-icons/im";
 
 const CTA = () => {

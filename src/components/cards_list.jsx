@@ -1,7 +1,7 @@
 import React from "react";
-import { DisplayCard } from "./display_card";
+import { DisplayCard } from "./display_card.jsx";
 import { useEffect, useState } from "react";
-import "..styles/display_card.css";
+import "../styles/display_card.css";
 import { FormControl } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Select } from "@mui/material";
@@ -26,7 +26,9 @@ const Cards_list = () => {
 
   const [cards, setCards] = useState([]);
   const [sign, setSign] = useState("none");
-  const [url, setUrl] = useState("https://project-tarot-deck-js.onrender.com/api/cards");
+  const [url, setUrl] = useState(
+    "https://project-tarot-deck-js.onrender.com/api/cards"
+  );
 
   function handleChangeSign(event) {
     setSign(event.target.value);
@@ -37,7 +39,9 @@ const Cards_list = () => {
     if (sign == "none") {
       setUrl("https://project-tarot-deck-js.onrender.com/api/cards");
     } else {
-      setUrl(`https://project-tarot-deck-js.onrender.com/api/cards?filters[sign][$eq]=${sign}`);
+      setUrl(
+        `https://project-tarot-deck-js.onrender.com/api/cards?filters[sign][$eq]=${sign}`
+      );
     }
     try {
       fetch(url).then(async (data) => {

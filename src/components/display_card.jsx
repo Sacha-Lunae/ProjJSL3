@@ -21,9 +21,7 @@ function DisplayCard(props) {
   async function startFetching() {
     try {
       axios.get(apiURL).then((response) => {
-        setImage(
-          response.data.data.attributes.imageURL
-        );
+        setImage(response.data.data.attributes.imageURL);
         setName(response.data.data.attributes.name);
         setDesc(response.data.data.attributes.description);
         setDescUD(response.data.data.attributes.descriptionUD);
@@ -40,7 +38,7 @@ function DisplayCard(props) {
 
   return (
     <section id="card">
-      <div className="container card_containerr">
+      <div className="container card_container">
         <div className="card_display">
           <div className="card_image">
             <a href={apiURL}>
@@ -58,12 +56,10 @@ function DisplayCard(props) {
               <h5>Meaning</h5>
               <small>{Description}</small>
             </article>
-            <article className="descriptions">
-              <div className="description">
-                <GiBleedingEye className="description_icon" />
-                <h5>Upside-down Meaning</h5> <br /> <br />
-                <small>{DescUD}</small>
-              </div>
+            <article className="description upside_down">
+              <GiBleedingEye className="description_icon" />
+              <h5>Upside-down Meaning</h5> <br /> <br />
+              <small>{DescUD}</small>
             </article>
           </div>
           <p>

@@ -52,12 +52,14 @@ const NewCard = () => {
 
   useEffect(() => {
     let ignore = false;
-    fetch("https://project-tarot-deck-js.onrender.com/api/Oracles/").then(async (data) => {
-      console.log(data);
-      if (!ignore) {
-        setCards((await data.json()).data);
+    fetch("https://project-tarot-deck-js.onrender.com/api/Oracles/").then(
+      async (data) => {
+        console.log(data);
+        if (!ignore) {
+          setCards((await data.json()).data);
+        }
       }
-    });
+    );
   });
 
   return (

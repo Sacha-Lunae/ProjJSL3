@@ -52,6 +52,9 @@
     },
     "descriptionUD": {
       "type": "text"
+    },
+    "imageURL": {
+      "type": "string"
     }
   }
 }
