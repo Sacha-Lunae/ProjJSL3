@@ -20,5 +20,5 @@ Intially, I meant to deploy the app using PostgreSQL. I unfortunately didn't hav
 
 ### About me
 
-My name's Sacha Guenoun and I'm a 3rd year student at Efrei, a computer science school in Paris. This project was made in the context of a JavaScript class at VSB-TUO, in the computer science faculty of Ostrava where I spent the winter semester of 2023.
+My name's Sacha Guenoun and I'm a 3rd year student at Efrei, a computer science school in Paris. This project was made in the context of a JavaScript class at VSB-TUO, in the computer science faculty of Ostrava where I spent the winter semester of 2022.
 
